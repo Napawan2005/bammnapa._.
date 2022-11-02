@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<style type="text/css">
+     *{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    .img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-size: cover;
+        background-position: center;
+        background-image: url('https://i.pinimg.com/originals/b1/b8/91/b1b891a81119445dcd10ffe88b3e226a.gif');
+        filter: brightness(35%);
+    }
+
+    
+
+    .d{
+        position: absolute;
+        width: 15vw;
+        height: 20vh;
+        background-image: url('https://i.pinimg.com/originals/be/ee/95/beee952133804ed619993be607848ead.gif');
+        font-weight: bold;
+        border-radius: 100%;
+        top: 1vh;
+        left: 43vw;
+        box-shadow:  8px 8px 12px;
+        transition: ease-out .2s;
+       
+    }
+
+    .d h1{
+        position: absolute;
+        top: 40%;
+        left: 35%;
+        text-shadow: none;
+        color: #fff;
+        
+    }
+
+    .d:hover{
+        color: rgb(0, 0, 0);
+        text-shadow: 6px 6px 15px;
+        transform: translateY(-5px);
+        filter:brightness(85%) ;
+    }
+
+    .fd{
+        position: absolute;
+        width: 55vh;
+        height: 20vh;
+        background-color:  none;
+        top: 30vh;
+        left: 2vw;
+        border-radius: 30vh;
+        box-shadow: 8px 8px 12px;
+        
+
+    }
+
+   .tt{
+        position: absolute;
+        width: 55vh;
+        height: 20vh;
+        background-color: none;
+        top: 30vh;
+        left: 38vw;
+        border-radius: 30vh;
+        box-shadow: 8px 8px 12px;
+   }
+
+   .ig{
+        position: absolute;
+        height: 20vh;
+        width: 55vh;
+        background-color: none;
+        top: 30vh;
+        left: 70vw;
+        border-radius: 30vh;
+        box-shadow: 8px 8px 12px;
+   }
+
+   .call{
+        position: absolute;
+        width: 55vh;
+        height: 20vh;
+        background-color: none;
+        left: 2vw;
+        top: 60vh;
+        border-radius: 30vh;
+        box-shadow: 8px 8px 12px;
+   }
+
+   .line{
+        position: absolute;
+        width: 55vh;
+        height: 20vh;
+        background-color:  none;
+        top: 60vh;
+        left: 38vw;
+        border-radius: 30vh;
+        box-shadow: 8px 8px 12px;
+   }
+
+   .gm{
+        position: absolute;
+        width: 55vh;
+        height: 20vh;
+        background-color:  none;
+        top: 60vh;
+        left: 70vw;
+        border-radius: 30vh;
+        box-shadow: 8px 8px 12px;
+   }
+
+   .imgfd,.imgtt,.imgig,.imgline,.imgcall,.imggm{
+        position: absolute;
+        width: 35%;
+        height: 80%;
+        background-color: aqua;
+        top: 1.5vh;
+        left: 5%;
+        border-radius: 30vh;
+        box-shadow: 3px 3px 15px;
+        transition: ease-out .2s;
+   }
+
+   .imgfd{
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        background-image: url('https://i.pinimg.com/564x/70/5e/90/705e907986347c969ce90ddd4d8d7059.jpg');
+        color: #000;
+   }
+
+   .imgtt{
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        background-image: url('https://i.pinimg.com/564x/db/bb/57/dbbb57e4a4dd74be71504cdbac7a3095.jpg');
+        color: #000;
+   }
+
+   .imgig{
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        background-image: url('https://i.pinimg.com/564x/6c/f3/c4/6cf3c4af464db87eed9288daceb64985.jpg');
+        color: #000;
+   }
+
+   .imgline{
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        background-image: url('https://i.pinimg.com/564x/b2/22/db/b222dbc287cbf2b0100bddb6e5991a08.jpg');
+        color: #000;
+   }
+
+   .imgcall{
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        background-image: url('https://i.pinimg.com/564x/11/1c/66/111c661299698ee8ba4e5e7f9622cec3.jpg');
+        color: #000;
+   }
+
+   .imggm{
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        background-image: url('https://i.pinimg.com/564x/0d/40/89/0d4089f076bc68ee73d5218ce3a380f6.jpg');
+        color: #000;
+   }
+
+   .imgfd:hover,.imgtt:hover,.imgig:hover,.imgline:hover,.imgcall:hover,.imggm:hover{
+        color: rgb(0, 0, 0);
+        text-shadow: 6px 6px 15px;
+        transform: translateY(-5px);
+        filter:brightness(85%) ;
+   }
+
+   .fd h3,.tt h3,.ig h3,.line h3,.call h3,.gm h3{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: #fff;
+   }
+
+   .home{
+        position: absolute;
+        width: 8vw;
+        height: 15vh;
+        background-color:none;
+        top: 83vh;
+        right: 5vw;
+        border-radius: 2vh;
+        transition: ease-out .2s;
+    }
+
+    .home h1{
+        position: absolute;
+        color: rgb(127, 50, 250);
+        top: 30%;
+        left: 8%;
+        text-shadow: none;
+    }
+
+    .home:hover{
+        color: rgb(0, 0, 0);
+        box-shadow: 6px 6px 15px;
+        transform: translateY(-5px);
+        filter:brightness(85%) ;
+    }
+   
+
+   
+</style>
+<body>
+
+    <div class="img"></div>
+    <div class="d">
+        <h1>Date</h1>
+    </div>
+
+    <div class="fd">
+        <a href="https://www.facebook.com/profile.php?id=100012395619856">
+            <div class="imgfd"></div>
+        </a>
+        <h3>Bam Bam</h3>
+    </div>
+
+    <div class="tt">
+       <a href="https://www.tiktok.com/@bam28042005">
+         <div class="imgtt"></div>
+        </a>
+        <h3>@bam28032005</h3>
+    </div>
+
+    <div class="ig">
+        <a href="https://www.instagram.com/bam4560/">
+            <div class="imgig"></div>
+        </a>
+        <h3>bam4560</h3>
+    </div>
+
+    <div class="line">
+        <div class="imgline"></div>
+        <h3>bamnapa28</h3>
+    </div>
+
+    <div class="call">
+        <div class="imgcall"></div>
+        <h3>0990358453</h3>
+    </div>
+
+    <div class="gm">
+        <div class="imggm"></div>
+        <h3>ccdda450@gmail.com</h3>
+    </div>
+
+    <a href="pro.html">
+        <div class="home"><h1>HOME</h1></div>
+    </a>
+
+    
+</body>
+</html>

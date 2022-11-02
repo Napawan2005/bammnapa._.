@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+</head>
+<style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+
+    }
+
+    .imgh {
+        position: absolute; 
+        width: 100%;
+        height: 150%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-size: cover;
+        background-position: center;
+        background-image: url('https://i.pinimg.com/originals/53/b6/29/53b62981c5ed4918f8b3cfeaf895529b.gif');
+        background-color: rgb(76, 34, 85);
+        filter: brightness(35%);
+
+    }
+
+    .hobbies{
+        position: absolute;
+        width: 15vw;
+        height: 20vh;
+        background-image: url('https://i.pinimg.com/originals/be/ee/95/beee952133804ed619993be607848ead.gif');
+        font-weight: bold;
+        border-radius: 100%;
+        top: 3%;
+        left: 23%;
+        box-shadow: 3px 3px 10px;
+        transition: ease-out .2s;
+    }
+
+    .hobbies:hover{
+        color: rgb(0, 0, 0);
+        text-shadow: 6px 6px 15px;
+        transform: translateY(-5px);
+        filter:brightness(85%) ;
+    }
+
+    .hobbies h1{
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        color: #fff;
+        text-shadow: none;
+    }
+
+    .box1h,.box2h,.box3h{
+        position: absolute;
+        width: 18vw;
+        height: 30vh;
+        background: #000;
+        border-radius: 100%;
+        transition: ease-out .2s;
+        left: 10%;
+    }
+
+    .box1h {
+        position: absolute;
+        top: 25%;
+        background: url('/welcome/code.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .box2h{
+        position: absolute;
+        top: 58%;
+        background: url('/welcome/cv.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .box3h{
+        position: absolute;
+        top: 93%;
+        background: url('/welcome//book.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .box1h:hover, .box2h:hover, .box3h:hover{
+        color: rgb(0, 0, 0);
+        text-shadow: 6px 6px 15px;
+        transform: translateY(-5px);
+        filter:brightness(85%) ;
+    }
+
+    .texth1,.texth2,.texth3{
+        position: relative;
+        position: fixed;
+        width: 58vw;
+        height: 10vh;
+        background-color: none;
+        box-shadow: 5px 5px 15px;
+        border-radius: 10vh;
+        left: 35vw;
+        
+    }
+
+    .texth1{
+        position: absolute;
+        background: none;
+        top: 38%;
+    }
+
+    .texth2{
+        position: absolute;
+        top: 68%;
+    }
+
+    .texth3{
+        position: absolute;
+        top: 105%;
+    }
+
+    .texth1 h3,.texth2 h3,.texth3 h3{
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        left: 45%;
+        top: 35%;
+    }
+
+    .home{
+        position: absolute;
+        width: 8vw;
+        height: 15vh;
+        background-color: none;
+        top: 130vh;
+        right: 2vw;
+        border-radius: 2vh;
+        transition: ease-out .2s;
+    }
+
+    .home h1{
+        position: absolute;
+        color: rgb(127, 50, 250);
+        top: 30%;
+        left: 8%;
+        text-shadow: none;
+    }
+
+    .home:hover{
+        color: rgb(0, 0, 0);
+        box-shadow: 6px 6px 15px;
+        transform: translateY(-5px);
+        filter:brightness(85%) ;
+    }
+
+
+
+</style>
+<body>
+    <div class="imgh"></div>
+
+    <div class="hobbies">
+        <h1>Hobbies</h1>
+    </div>
+
+    <div class="box1h"></div>
+    <div class="box2h"></div>
+    <div class="box3h"></div>
+
+
+    <div class="texth1">
+        <h3>การเขียนโค้ช</h3>
+    </div>
+    <div class="texth2">
+        <h3>การตัดคลิป</h3>
+    </div>
+    <div class="texth3">
+        <h3>การอ่านสือ</h3>
+    </div>
+
+    <a href="pro.html">
+        <div class="home"><h1>HOME</h1></div>
+    </a>
+
+    
+</body>
+</html>

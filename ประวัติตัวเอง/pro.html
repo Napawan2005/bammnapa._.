@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทดสอบ</title>
+</head>
+
+<style type="text/css">
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    .img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-size: cover;
+        
+        background-image: url('https://i.pinimg.com/originals/98/8f/f9/988ff97dc573215039a6d388b5358688.gif');
+        background-color: rgb(76, 34, 85);
+        filter: brightness(35%);
+
+    }
+
+
+    .menu {
+        position: absolute;
+        width: 37vw;
+        height: 8vh;
+        display: flex;
+        align-items: center;/*ให้รวมอยู่ตรงกลาง*/
+        position: relative;/*ค่ากำหนดในขอบ*/
+        border-radius: 10px;
+        top: 70px;
+        left: 50%;
+        font-size: 35px;
+        background: rgba(216, 216, 216, 0.048);
+        box-shadow: 5px 5px 15px;
+        
+    }
+
+   .menu h6:hover{
+        color: rgb(0, 0, 0);
+        text-shadow: 6px 6px 15px;
+        transform: translateY(-2px);
+        filter:brightness(85%) ;
+    }
+
+    .menu h6 {
+        position: absolute;
+        top: -50%;
+        margin: 3vw;
+        font-size: 1rem;
+        color: #fff;
+        transition: ease-out.4s;   
+    }
+
+    .m1{
+        position: absolute;
+        width: 30%;
+        height: 85%;
+        background-size: cover;
+        border-radius: 15px;
+        top: 0.3vw;
+        left: 2%;
+        transition: ease-out .2s;
+        box-shadow: 5px 5px 15px;
+        background-image: url('https://i.pinimg.com/originals/a2/cf/d3/a2cfd3ff764d1eac5ef2cc36698360b4.gif');
+        
+    }
+
+    
+
+
+    .m2 {
+        position: absolute;
+        width: 30%;
+        height: 85%;
+        box-shadow: 5px 5px 15px;
+        background-size: cover;
+        background-image: url('https://i.pinimg.com/originals/a2/cf/d3/a2cfd3ff764d1eac5ef2cc36698360b4.gif');
+        border-radius: 15px;
+        top: 0.3vw;
+        left: 33.9%;
+        transition: ease-out .2s;
+        
+        
+    }
+
+    .m3{
+        position: absolute;
+        width: 30%;
+        height: 85%;
+        box-shadow: 5px 5px 15px;
+        transition: ease-out .2s;
+        background-size: cover;
+        background-image: url('https://i.pinimg.com/originals/a2/cf/d3/a2cfd3ff764d1eac5ef2cc36698360b4.gif');
+        border-radius: 15px;
+        top: 0.3vw;
+        left: 65.8%;
+        
+    }
+
+    
+    .m1:hover,.m2:hover,.m3:hover{
+        box-shadow: 6px 6px 15px;
+        transform: translateY(-2px);
+        filter:brightness(85%) ;
+        text-shadow: none;
+        
+
+    }
+  
+
+    .p{
+        position: absolute;
+        width: 13.5vw;
+        height: 13.5vh;
+        background-size: cover;
+        background-position: center;
+        background-image: url('https://i.pinimg.com/originals/f7/44/06/f744060231b6aaecd96b158c50b35a84.gif');
+        left: 15%;
+        border-radius: 50px;
+        position: relative;
+        transition: ease-out .2s;
+    }
+
+    .p h1 {
+        position: absolute;
+        left: 13.5%;
+        top: 30%;
+        color: #fff;
+        
+    }
+
+    .p:hover{
+        box-shadow: 5px 5px 10px;
+        transform: translateY(-10px);
+        filter:brightness(85%) ;
+        color: #000;
+        
+        
+    }
+
+    .img1 {
+        position: absolute;
+        width: 30vw;
+        height: 70vh;
+        background: #000;
+        background-image: url('/welcome/bam1.jpg');
+        background-position: center;
+        background-size: cover;
+        top: 25%;
+        left: 7.3%;
+        border-radius: 20px;
+    }
+
+    .img1:hover {
+        position: absolute;
+        background-position: center;
+        background-size: cover;
+        background-image: url('/welcome/y3.jpg');
+        box-shadow: 3px 3px 10px;
+    }
+
+    .main {
+        position: absolute;
+        width: 45vw;
+        height: 75vh;
+        background: none;
+        top: 20%;
+        right: 8%;
+    }
+
+    .box1 {
+        position: absolute;
+        left: 0;
+       
+       
+    }
+
+
+    .box2 {
+        position: absolute;
+        right: 0;
+       
+    }
+
+    .box3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+       
+
+       
+    }
+
+    .box4 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        
+       
+    }
+
+    .box1 h3 {
+        position: absolute;
+        color: #fff;
+        top: 12vw;
+        left: 42%;
+        font-size: 2rem;
+        text-shadow: none;
+        
+    }
+
+    .box2 h3 {
+        position: absolute;
+        color: #fff;
+        top: 12vw;
+        left: 42%;
+        font-size: 2rem;
+        text-shadow: none;
+
+    }
+
+    .box3 h3{
+        position: absolute;
+        color: #fff;
+        top: 12vw;
+        left: 32%;
+        font-size: 2rem;
+        text-shadow: none;
+
+    }
+
+    .box4 h3{
+        position: absolute;
+        color: #fff;
+        top: 12vw;
+        left: 40%;
+        font-size: 2rem;
+        text-shadow: none;
+    }
+
+    .box1,.box2,.box3,.box4 {
+        position: absolute;
+        background: none;
+        width: 15vw;
+        height: 30vh;
+        border-radius: 15px;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        transition: ease-out .2s;
+        padding-top: 60px;
+        border-radius: 300px;
+        box-shadow: 5px 5px 15px;
+        transition: ease-out .2s;
+        background-image: url('https://i.pinimg.com/564x/0e/78/73/0e787368fdbead469377cad40089f359.jpg');
+
+    }
+
+    .box1:hover,.box2:hover,.box3:hover,.box4:hover{
+        color: rgb(0, 0, 0);
+        text-shadow: 6px 6px 15px;
+        transform: translateY(-2px);
+        filter:brightness(85%) ;
+        position: absolute;
+        background-position: center;
+        background-size: cover;
+    }
+
+    
+
+</style>
+
+<body>
+
+    <div class="img"></div>
+
+    <div class="menu">
+       
+        <div class="m1">
+            <a href="hobbies.html">
+                <h6>Hobbies</h6>
+               </a>
+        </div>
+       
+       
+        <div class="m2">
+       
+        <a href="school.html">
+            <h6>School</h6>
+        </a>
+        </div>
+       
+        <div class="m3">
+        <a href="goal.html">
+            <h6>Goal</h6>
+        </a>
+            
+        
+    </div>
+        
+    </div>
+   
+    <div class="p">
+        <h1>PROFILE</h1>
+        
+    </div>
+
+    <div class="img1"></div>
+
+    <div class="main">
+        <div class="box1">
+            <a href="me.html"><h3>Me</h3></a>
+        </div>
+        <div class="box2">
+            <a href="like.html"><h3>like</h3></a>
+        </div>
+        <div class="box3">
+            <a href="friend.html"><h3>friend</h3></a>
+        </div>
+        <div class="box4">
+            <a href="date.html"><h3>Date</h3></a>
+        </div>
+    </div>
+    
+</body>
+
+</html>

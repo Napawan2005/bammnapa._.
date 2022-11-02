@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>like</title>
+</head>
+<style type="text/css">
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+
+    }
+
+    .img{
+        width: 100%;
+        height: 110%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-size: cover;
+        background-position: center;
+        background-image: url('https://i.pinimg.com/originals/b1/b8/91/b1b891a81119445dcd10ffe88b3e226a.gif');
+        filter: brightness(35%);
+    }
+
+    .boxl{
+        position: absolute;
+        width: 15vw;
+        height: 20vh;
+        background: #211321;
+        background-image: url('https://i.pinimg.com/originals/be/ee/95/beee952133804ed619993be607848ead.gif');
+        font-weight: bold;
+        border-radius: 100%;
+        top: 5%;
+        left: 15%;
+        box-shadow: 3px 3px 10px;
+        transition: ease-out .2s; 
+    }
+
+    .boxl h1{
+        position: absolute;
+        top: 35%;
+        left: 39%;
+        color: aliceblue;
+        text-shadow: none;
+    }
+
+    .boxl:hover{
+        color: rgb(0, 0, 0);
+        text-shadow: 6px 6px 15px;
+        transform: translateY(-2px);
+        filter:brightness(85%) ;
+
+    }    
+
+    .boxlike{
+        position: absolute; 
+        width: 45vw;
+        top: 28vh;
+        height: 70vh;
+        background-color: none;
+        box-shadow: 8px 8px 102px;
+        border-radius: 10%;
+    }
+
+    .imglike{
+        position: absolute; 
+        width: 50%;
+        height: 60%;
+        background-size: cover;
+        background-position: center;
+        background: url('/welcome/code.jpg');
+        background-color: crimson;
+        border-radius: 10%;
+        left: 25%;
+        top: 5%;
+    }
+
+    .textl{
+        position: absolute; 
+        top: 80%;
+        left: 30%;
+        color: aliceblue;
+    }
+    
+
+    .food,.watch,.game{
+        position: absolute;
+        position: absolute;
+        width: 18vw;
+        height: 30vh;
+        background: rgb(6, 3, 173);
+        border-radius: 100%;
+        transition: ease-out .2s;
+        left: 10%;
+        box-shadow: 5px 5px 15px;
+    }
+
+    .food:hover,.watch:hover,.game:hover{
+        position: absolute;
+        color: rgb(0, 0, 0);
+        text-shadow: 6px 6px 15px;
+        transform: translateY(-5px);
+        filter:brightness(85%) ;
+        
+    }
+
+    .food{
+        position: absolute;
+        left: 50vw;
+        top: 1vh;
+        background:url('https://i.pinimg.com/564x/91/d9/32/91d93224a26541fc87c3fd060d7507db.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .watch{
+        position: absolute;
+        left: 75vw;
+        top: 35vh;
+        background: url('https://i.pinimg.com/564x/7d/54/af/7d54af61f43638a51fafb229fb36a9ab.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .game{
+        position: absolute;
+        left: 50vw;
+        top: 65vh;
+        background: url('https://i.pinimg.com/564x/2d/50/f2/2d50f2e357707a3c6556b1017f0879bf.jpg');
+        background-position: center;
+        background-size: cover;
+        color: black;
+    }
+
+    .textfood,.textwatch,.textgame{
+        position:absolute ;
+        width: 18vw;
+        height: 15vh;
+        background: none;
+        box-shadow: 8px 8px 12px;
+        border-radius: 15vh;
+         
+    }
+
+    .textfood{
+        position: absolute;
+        top: 5vh;
+        left: 75vw;
+    }
+
+    .textfood h3{
+        position: absolute;
+        left: 38%;
+        top: 40%;
+        color: aliceblue;
+    }
+
+    .textwatch{
+        position: absolute;
+        top: 40vh;
+        left: 50vw;
+        
+
+    }
+
+    .textwatch h3{
+        position: absolute;
+        top: 40%;
+        left: 33%;
+        color: aliceblue;
+    }
+
+    .textgame{
+        position: absolute;
+        top: 75vh;
+        left: 75vw;
+    }
+
+    .textgame h3{
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        color: aliceblue;
+    }
+
+    .home{
+        position: absolute;
+        width: 8vw;
+        height: 15vh;
+        background-color: none;
+        top: 94vh;
+        right: 2vw;
+        border-radius: 2vh;
+        transition: ease-out .2s;
+    }
+
+    .home h1{
+        position: absolute;
+        color: rgb(127, 50, 250);
+        top: 30%;
+        left: 8%;
+        text-shadow: none;
+    }
+
+    .home:hover{
+        color: rgb(0, 0, 0);
+        box-shadow: 6px 6px 15px;
+        transform: translateY(-5px);
+        filter:brightness(85%) ;
+    }
+   
+
+</style>
+<body>
+
+    <div class="img"></div>
+
+
+    <div class="boxl">
+        <h1>like</h1>
+
+    </div>  
+    
+    <div class="boxlike">
+        <div class="imglike"></div>
+    <div class="textl">
+        <h3>การที่เราได้เขียนโปรแกรม เขียนไงก้ไม่เบื่อ</h3>
+    </div>
+    </div>
+    
+
+    <div class="food"></div>
+    <div class="textfood">
+        <h3>ข้าวผัด</h3>
+    </div>
+
+    <div class="textwatch">
+        <h3>นมสดปั่น</h3>
+    </div>
+    <div class="watch"></div>
+
+    <a href="https://www.facebook.com/FreeFireCreatorsTH/photos">
+        <div class="game"></div>
+    </a>
+    <div class="textgame">
+        <h3>FreeFire <br>
+            [ปัจจุบันได้มีการเลิกเล่นเนื่องไม่มีเวลาว่าง]</h3>
+    </div>
+
+    <a href="pro.html">
+        <div class="home"><h1>HOME</h1></div>
+    </a>
+
+</body>
+</html>

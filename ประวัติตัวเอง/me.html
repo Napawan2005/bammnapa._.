@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me</title>
+</head><style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    .img {
+        width: 100%;
+        height: 110%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-size: cover;
+        background-position: center;
+        background-image: url('https://i.pinimg.com/originals/b1/b8/91/b1b891a81119445dcd10ffe88b3e226a.gif');
+        filter: brightness(35%);
+
+    }
+
+    .me1{
+        position: absolute;
+        width: 15vw;
+        height: 20vh;
+        background-image: url('https://i.pinimg.com/originals/be/ee/95/beee952133804ed619993be607848ead.gif');
+        font-weight: bold;
+        border-radius: 100%;
+        top: 5%;
+        left: 9%;
+        box-shadow: 3px 3px 10px;
+        transition: ease-out .2s;
+
+      }
+
+
+    .me1 h1 {
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        text-shadow: none;
+        
+        
+    }
+
+    .me1:hover {
+        color: rgb(0, 0, 0);
+        text-shadow: 6px 6px 15px;
+        transform: translateY(-2px);
+        filter:brightness(85%) ;
+       
+    }
+
+    .imgme{
+        position: absolute;
+        width: 29vw;
+        height: 65vh;
+        background-color: darkorchid;
+        transition: ease-out .2s;
+        top: 30%;
+        left: 3%;
+        border-radius: 5%;
+        box-shadow: 3px 3px 15px;
+        background-size: cover;
+        background-position: center;
+        background-image: url('/welcome/b.jpg');
+
+    }
+
+    .main1{
+        position: absolute;
+        width: 45vw;
+        height: 75vh;
+        background-color: none;
+        right: 5%;
+        top: 15%;
+    }
+
+    .box-imgme1,.box-imgme2{
+        position: absolute;
+        width: 40%;
+        height: 45%;
+        background-color: coral;
+        border-radius: 10%;
+        box-shadow: 3px 3px 15px;
+        transition: ease-out .2s;
+    }
+
+    .box-imgme1:hover,.box-imgme2:hover {
+        color: rgb(0, 0, 0);
+        text-shadow: 6px 6px 15px;
+        transform: translateY(-2px);
+        filter:brightness(85%) ;
+    }
+
+    .box-imgme1{
+        position: absolute;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+        background-image: url('/welcome/y3.jpg');
+        
+
+    }
+
+    .box-imgme2{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+        background-position: center;
+        background-image: url('/welcome/fob.jpg');
+        
+    }
+
+    .text1,.text2{
+        position: absolute;
+        width: 55%;
+        height: 35%;
+        background-color: rgba(255, 255, 255, 0.055);
+        border-radius: 85%;
+        box-shadow: 3px 3px 15px;
+    }
+
+    .text1{
+        position: absolute;
+        right: 0;
+        
+    }
+
+    .text2{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .text1 h3{
+        position: absolute;
+        top: 35%;
+        left: 8%;
+        font-size: 100%;
+        font: caption;
+    }
+
+    .text2 h3{
+        position: absolute;
+        top: 35%;
+        left: 16%;
+        font-size: 100%;
+        font: caption;
+    }
+
+    .f h4,.o h4{
+        position: absolute;
+        top: 65%;
+        font-size: 100%;
+        font: bold;
+
+    }
+
+    .f h4{
+        position: absolute;
+        left: 15%;
+    }
+
+    .o h4{
+        position: absolute;
+        left: 50%;
+    }
+
+    .me1 h1,.text1 h3,.text2 h3,.f h4,.o h4{
+        color: aliceblue;
+    }
+
+    .home{
+        position: absolute;
+        width: 8vw;
+        height: 15vh;
+        background-color: none;
+        top: 92vh;
+        right: 2vw;
+        border-radius: 2vh;
+        transition: ease-out .2s;
+    }
+
+    .home h1{
+        position: absolute;
+        color: rgb(127, 50, 250);
+        top: 30%;
+        left: 8%;
+        text-shadow: none;
+    }
+
+    .home:hover{
+        color: rgb(0, 0, 0);
+        box-shadow: 6px 6px 15px;
+        transform: translateY(-5px);
+        filter:brightness(85%) ;
+    }
+
+</style>
+<body>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="me1">
+        <h1>ME</h1>
+    </div>
+
+    <div class="imgme"></div>
+
+<div class="main1">
+
+    <div class="box-imgme1"></div>
+
+    <div class="text1">
+        <h3><b>ชื่อ-นามสกุล:</b>  น.ส นภัสวรรณ กอสินประเสริฐ<br>
+            <b>ชื่อเล่น:</b>  แบม [ แบมบี้ ]<br>
+            <b>สายที่เรียน:</b>  วิทย์-คณิต<br>
+        </h3>
+        
+    </div>
+
+    <div class="text2">
+        <h3><b>วันเกิด</b>:  วันที่ 28 มีนาคม พ.ศ. 2548<br>
+            <b>มีพี่น้อง:</b>  ชาย 2 คน แบ่งได้ แท้ , ไม่แท้</h3>
+        
+        <div class="f">
+            <h4>ฟลุ๊ค [แท้]</h4>
+        </div>
+
+        <div class="o">
+            <h4>ข้าวโอ๊ต [ไม่แท้]</h4>
+        </div>
+    </div>
+
+    <div class="box-imgme2"></div>
+
+   
+</div>
+<a href="pro.html">
+    <div class="home"><h1>HOME</h1></div>
+</a>
+</body>
+</html>
